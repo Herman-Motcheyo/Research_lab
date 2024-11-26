@@ -21,7 +21,7 @@
             <router-link to="/publications">Publications</router-link>
           </div>
           <div class="topListItem">
-            <router-link to="/projects">Projects</router-link>
+            <router-link to="/project">Projects</router-link>
           </div>
           <div class="topListItem">
             <router-link to="/join_us">Join Us</router-link>
