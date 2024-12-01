@@ -73,7 +73,7 @@ const slides = ref([
 .slide-overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(255, 0, 0, 0.7); /* Red overlay */
+  background: #551A8B; /* Red overlay */
   color: white;
   padding: 20px;
   text-align: center;
@@ -82,7 +82,7 @@ const slides = ref([
 
 .swiper-button-prev, .swiper-button-next {
   color: #fff;
-  background-color: #ff0000; /* Red color for navigation buttons */
+  background-color: #551A8B; /* Red color for navigation buttons */
   padding: 10px;
   border-radius: 50%;
 }
