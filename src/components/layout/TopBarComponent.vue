@@ -100,6 +100,12 @@
     font-weight: 300;
     cursor: pointer;
   }
+
+  a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+  }
   
   /* Style du bouton hamburger */
   .menu-toggle {
