@@ -15,7 +15,7 @@
             <router-link to="/">Home</router-link>
           </div>
           <div class="topListItem">
-            <router-link to="/about">About</router-link>
+            <router-link to="/news">News</router-link>
           </div>
           <div class="topListItem">
             <router-link to="/publications">Publications</router-link>
@@ -24,7 +24,7 @@
             <router-link to="/project">Projects</router-link>
           </div>
           <div class="topListItem">
-            <router-link to="/join_us">Join Us</router-link>
+            <router-link to="/team">Team</router-link>
           </div>
           <div class="topListItem">
             <router-link to="/contact">Contact</router-link>
