@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeComponent from '@/modules/Home/HomeComponent.vue';
 import ProjectComponent from '@/modules/projects/ProjectComponent.vue';
-import PubliComponent from '@/modules/publications/PubliComponent.vue'
+import PublicationComponent from '@/modules/publications/PublicationComponent.vue';
+import NewsComponent from '@/modules/News/NewsComponent.vue';
+import TeamComponent from '@/modules/team/TeamComponent.vue'
 const routes = [
   {
     path: '/',
@@ -16,7 +18,17 @@ const routes = [
   {
     path: '/publications',
     name:'Publications',
-    component: PubliComponent
+    component: PublicationComponent
+  },{
+    path: '/news',
+    name:'news',
+    component: NewsComponent
+  },
+  {
+    path:'/team',
+    name:'team',
+    component: TeamComponent
+
   }
 ];
 
