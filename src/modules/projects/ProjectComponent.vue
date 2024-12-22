@@ -17,7 +17,6 @@
   <script setup>
   import CardComponent from '@/components/common/CardComponent.vue';
   
-  // Exemple de données dynamiques
   const cards = [
     {
       title: "Card 1",
