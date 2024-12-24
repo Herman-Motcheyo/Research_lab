@@ -8,9 +8,9 @@
        </div>
  
        
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-         <div v-for="member in members" :key="member.id" 
-              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+       <div class="flex space-x-10 items-center justify-center text-center">
+         <div v-for="member in members" :key="member.id"  
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 ">
           
            <div class="h-64 w-full overflow-hidden bg-gray-200">
              <img 
@@ -47,14 +47,7 @@
  import { ref } from 'vue'
  
  const members = ref([
-   {
-     id: 1,
-     name: 'Dr. Nadia Fonkoua',
-     role: 'Principal Investigator',
-     description: 'Expert in materials science with 15 years of research experience.',
-     image: require('@/assets/home/team/nadia.jpeg'),
-     email: 'john.doe@university.edu'
-   },
+   
    {
      id: 2,
      name: 'Mr. Herman Tcheneghon Motcheyo',
@@ -71,13 +64,6 @@
      image: require('@/assets/home/team/tiogning.jpeg'),
      email: 'ltiogning@gmail.com'
    },
-   {
-     id: 4,
-     name: 'Dr. Kaze Rodrique',
-     role: 'Postdoctoral Researcher',
-     description: 'Expert in material characterization and analysis.',
-     image: '/api/placeholder/400/500',
-     email: 'sarah.williams@university.edu'
-   }
+  
  ])
  </script>

@@ -10,7 +10,7 @@
       <p class="text-gray-600 text-center">{{ description }}</p>
     </div>
     <div>
-      <button v-if="buttonText" @click="handleClick" class="px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800">
+      <button v-if="buttonText" @click="handleClick" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-500">
         {{ buttonText }}
       </button>
     </div>
