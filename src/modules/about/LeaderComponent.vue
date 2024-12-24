@@ -61,26 +61,27 @@ const groupLeader = ref({
 
 // Timeline data
 const timeline = ref([
-{
-    year: '2015 - 2020',
-    degree: 'Ph.D. in Chemistry',
-    institution: 'University of Yaoundé 1, Cameroon'
+  {
+    year: '2011',
+    degree: 'Ph.D. in Materials Engineering',
+    institution: 'University of Modena and Reggio Emilia, Italy'
   },
   {
-    year: '2015 - 2020',
-    degree: 'Ph.D. in Chemistry',
-    institution: 'University of Yaoundé 1, Cameroon'
+    year: '2008',
+    degree: 'Ph.D. in Materials Science',
+    institution: 'University of Yaoundé I, Cameroon'
   },
   {
-    year: '2013 - 2015',
-    degree: 'M.Sc. in Chemistry',
-    institution: 'University of Yaoundé 1, Cameroon'
+    year: '2008',
+    degree: 'Master in Research-to-Industry Transition',
+    institution: 'ASTER, Bologna, Italy'
   },
   {
-    year: '2009 - 2013',
-    degree: 'B.Sc. in Chemistry',
-    institution: 'University of Yaoundé 1, Cameroon'
-  }])
+    year: '2002',
+    degree: 'Master’s II in Inorganic Chemistry, specialization in Materials Chemistry',
+    institution: 'University of Yaoundé I, Cameroon'
+  },
 
+]);
 
 </script>

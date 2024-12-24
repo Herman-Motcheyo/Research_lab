@@ -23,17 +23,20 @@
           class="w-full max-w-md transform transition duration-500 hover:scale-105"
         />
       </div>
-      <div>
-        <p>View all projects</p>
-      </div>
+      <div class="text-right mt-4">
+      <a href="/project" class="text-blue-500 hover:underline">View More Projects</a>
+    </div>
     </section>
 
-    <!-- News Section -->
-    <section class="bg-white py-12">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <NewsComponent />
-      </div>
-    </section>
+<section class="bg-white py-12">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <NewsComponent :numberPr= "2"/>
+    <div class="text-right mt-4">
+      <a href="/news" class="text-blue-500 hover:underline">View More News</a>
+    </div>
+  </div>
+</section>
+
 
     <!-- About and Publications Section -->
     <section class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
