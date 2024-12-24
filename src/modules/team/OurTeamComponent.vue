@@ -8,7 +8,7 @@
        </div>
  
        
-       <div class="flex space-x-10 items-center justify-center text-center">
+       <div class="flex space-x-10 items-center justify-center text-center md:flex-row flex-col">
          <div v-for="member in members" :key="member.id"  
               class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 ">
           
