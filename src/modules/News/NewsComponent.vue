@@ -71,7 +71,7 @@ const newsItems = [
   {
     id: 1,
     title: ' Call for abstract to 2nd International CGCA conference',
-    summary: 'We are pleased to announce the call for abstracts for the 2nd International Conference on Computational Geometry and Computer Algorithms (CGCA). This prestigious event will bring together leading researchers, practitioners, and students to share and discuss cutting-edge developments in the field of computational geometry, algorithms, and their applications.',
+    summary: 'We are pleased to announce the call for abstracts for the 2nd International Conference on Ceramics and Geomaterials in Central Africa (CGCA). This prestigious event will bring together leading researchers, practitioners, and students to share and discuss cutting-edge developments in the field of Geomaterials and clays, Modelling and Artificial intelligence for materials science, and Others.',
     category: 'Events',
     date: '2024-12-10',
     image: require("@/assets/new/confe.jpg"),
