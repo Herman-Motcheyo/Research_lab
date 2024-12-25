@@ -41,7 +41,7 @@ const projects = ref([
     title: "EEPER:MD - Energy Efficiency and Eco-Responsible Processes in Infrastructure Production in Central Africa",
     description:
       "The Promotion of Research, Innovation, and Digital Culture in Central Africa (PRICNAC) aims to strengthen research and innovation capacities in Central African countries by consolidating innovation ecosystems and promoting sustainable development.",
-    duration: "2023-2024",
+    duration: "2023-2027",
     link: "https://eeper-site.vercel.app/",
   },
   {

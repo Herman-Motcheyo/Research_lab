@@ -27,8 +27,12 @@
             <router-link to="/team">Team</router-link>
           </div>
           <div class="topListItem">
+            <router-link to="/gallery">Gallery</router-link>
+          </div>
+          <div class="topListItem">
             <router-link to="/contact">Contact</router-link>
           </div>
+         
         </div>
   
         <!-- Bouton hamburger pour menu mobile -->
