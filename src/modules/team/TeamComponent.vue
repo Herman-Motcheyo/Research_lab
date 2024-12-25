@@ -98,11 +98,11 @@
       },
     ],
     phdStudents: [
-      {
-        id: 3,
-        name: "Mr. Herman Tcheneghon Motcheyo",
+    {
+        id: 5,
+        name: "Mr. Franck Djadjeu",
         role: "PhD Candidate",
-        description: "Specializes in Artificial Intelligence and Machine Learning.",
+        description: "Specializes particle packing to enhance compressive strengh of concrete",
         image: require("@/assets/home/team/herman.jpeg"),
         email: "hermanmotcheyo@gmail.com",
       },{
@@ -113,27 +113,20 @@
         image: require("@/assets/home/team/herman.jpeg"),
         email: "hermanmotcheyo@gmail.com",
       },{
-        id: 6,
-        name: "Mr. Herman Tcheneghon Motcheyo",
+        id: 5,
+        name: "Mr. Franck Djadjeu",
         role: "PhD Candidate",
-        description: "Specializes in Artificial Intelligence and Machine Learning.",
+        description: "Specializes particle packing to enhance compressive strengh of concrete",
         image: require("@/assets/home/team/herman.jpeg"),
         email: "hermanmotcheyo@gmail.com",
       },{
-        id: 7,
-        name: "Mr. Herman Tcheneghon Motcheyo",
+        id: 5,
+        name: "Mr. Franck Djadjeu",
         role: "PhD Candidate",
-        description: "Specializes in Artificial Intelligence and Machine Learning.",
+        description: "Specializes particle packing to enhance compressive strengh of concrete",
         image: require("@/assets/home/team/herman.jpeg"),
         email: "hermanmotcheyo@gmail.com",
-      },{
-        id: 3,
-        name: "Mr. Herman Tcheneghon Motcheyo",
-        role: "PhD Candidate",
-        description: "Specializes in Artificial Intelligence and Machine Learning.",
-        image: require("@/assets/home/team/herman.jpeg"),
-        email: "hermanmotcheyo@gmail.com",
-      },
+      }
     ],
     masterStudents: [
       {
