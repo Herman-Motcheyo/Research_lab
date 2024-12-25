@@ -1,166 +1,152 @@
+<script setup>
+import { ref } from 'vue'
+
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+</script>
+
 <template>
-    <div class="top">
-      <!-- Section gauche avec icônes des réseaux sociaux -->
-      <div class="topLeft">
-        <i class="topIcon fab fa-facebook-square"></i>
-        <i class="topIcon fab fa-instagram-square"></i>
-        <i class="topIcon fab fa-pinterest-square"></i>
-        <i class="topIcon fab fa-twitter-square"></i>
-      </div>
-  
-      <!-- Section centrale avec les liens de navigation -->
-      <div class="topCenter">
-        <div class="topList" :class="{ 'is-open': isMenuOpen }">
-          <div class="topListItem">
-            <router-link to="/">Home</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/news">News</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/publications">Publications</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/project">Projects</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/team">Team</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/gallery">Gallery</router-link>
-          </div>
-          <div class="topListItem">
-            <router-link to="/contact">Contact</router-link>
-          </div>
-         
+  <nav class="sticky top-0 z-50 w-full bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+       
+        <div class="hidden md:flex items-center space-x-4">
+         Group Flair-Pricnac
         </div>
-  
-        <!-- Bouton hamburger pour menu mobile -->
-        <button class="menu-toggle" @click="toggleMenu">☰</button>
+        <div class="flex-1 flex items-center justify-center">
+         
+          <div class="flex items-center md:hidden">
+            <button
+              @click="toggleMenu"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+        
+          <div class="hidden md:flex md:space-x-8">
+            <router-link
+              to="/"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Home
+            </router-link>
+            <router-link
+              to="/news"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              News
+            </router-link>
+            <router-link
+              to="/publications"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Publications
+            </router-link>
+            <router-link
+              to="/project"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Projects
+            </router-link>
+            <router-link
+              to="/team"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Team
+            </router-link>
+            <router-link
+              to="/gallery"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Gallery
+            </router-link>
+            <router-link
+              to="/contact"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Contact
+            </router-link>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img
+            class="h-8 w-8 rounded-full object-cover"
+            src=""
+            alt="Profile"
+          />
+        </div>
       </div>
-  
-      <!-- Section droite avec l'image (photo de profil ou logo) -->
-      <div class="topRight">
-        <img src="" class="topImg" alt="Profile">
+
+    
+      <div
+        class="md:hidden"
+        :class="isMenuOpen ? 'block' : 'hidden'"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <router-link
+            to="/"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Home
+          </router-link>
+          <router-link
+            to="/news"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            News
+          </router-link>
+          <router-link
+            to="/publications"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Publications
+          </router-link>
+          <router-link
+            to="/project"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Projects
+          </router-link>
+          <router-link
+            to="/team"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Team
+          </router-link>
+          <router-link
+            to="/gallery"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Gallery
+          </router-link>
+          <router-link
+            to="/contact"
+            class="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors"
+          >
+            Contact
+          </router-link>
+        </div>
       </div>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue';
-  
-  const isMenuOpen = ref(false);
-  
-  const toggleMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value;
-  };
-  </script>
-  
-  <style>
-  .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  
-  .topLeft,
-  .topRight {
-    display: flex;
-    flex: 3;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .topIcon {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #444;
-    cursor: pointer;
-  }
-  
-  .topCenter {
-    display: flex;
-    flex: 6;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .topList {
-    display: flex;
-    gap: 20px;
-    transition: max-height 0.3s ease;
-  }
-  
-  .topListItem {
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
-  }
-
-  a{
-    list-style: none;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  /* Style du bouton hamburger */
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 15px;
-  }
-  
-  /* Image de profil ou logo */
-  .topImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-  }
-  
-  /* Responsivité pour les écrans de moins de 768px */
-  @media (max-width: 768px) {
-    .top {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .topLeft {
-      display: none; /* Masquer les icônes sociales sur mobile */
-    }
-  
-    .topCenter {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .menu-toggle {
-      display: block; /* Afficher le bouton hamburger */
-    }
-  
-    .topList {
-      display: none; /* Masquer le menu par défaut sur mobile */
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .topList.is-open {
-      display: flex; /* Afficher le menu quand il est ouvert */
-    }
-  }
-  </style>
-  
+  </nav>
+</template>
