@@ -4,7 +4,7 @@
       <!-- Logo and Description Section -->
       <div class="flex flex-col items-start space-y-3 w-full sm:w-1/2 md:w-1/4">
         <img src="#" alt="Logo" class="w-24 mb-2" />
-        <p class="text-sm">Structural Processing Property</p>
+        <p class="text-sm">Group Flair-PRICNAC</p>
       </div>
 
       <!-- Address Section -->
@@ -25,20 +25,6 @@
         <p class="text-sm">
           Email: <a href="mailto:kamseuelie2001@yahoo.fr" class="text-blue-500 hover:underline">kamseuelie2001@yahoo.fr</a>
         </p>
-        <p class="text-sm">
-          <a href="#" class="text-blue-500 hover:underline">Researcher ID</a>
-        </p>
-        <p class="text-sm">
-          <a href="#" class="text-blue-500 hover:underline">ORCID ID</a>
-        </p>
-      </div>
-
-      <!-- Publications Statistics Section -->
-      <div class="w-full sm:w-1/2 md:w-1/4">
-        <h3 class="font-semibold text-lg mb-2">Publications Statistics</h3>
-        <p class="text-sm">** Publications</p>
-        <p class="text-sm">7000 Citation Counts</p>
-        <p class="text-sm">22 Research Members</p>
       </div>
     </div>
     
