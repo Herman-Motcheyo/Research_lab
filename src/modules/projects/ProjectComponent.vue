@@ -50,7 +50,7 @@ const projects = ref([
     description:
       "FLAIR Fellowships are awarded to talented African early-career researchers with the potential to become leaders in their fields. The program supports independent research careers in sub-Saharan African institutions, focusing on cutting-edge scientific research addressing global challenges.",
     duration: "2020-2023",
-    link: "https://royalsociety.org/grants-schemes-awards/grants/flair-fellowships/",
+    link: "https://royalsociety.org/news/2020/05/african-academy-of-sciences-and-royal-society-announce-recipients-of-2020-flair-fellowships/",
   },
   {
     id: 3,

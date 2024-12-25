@@ -20,6 +20,7 @@
           :description="card.description"
           :imageUrl="card.imageUrl"
           :buttonText="card.buttonText"
+          :link='card.link'
           class="w-full max-w-md transform transition duration-500 hover:scale-105"
         />
       </div>
@@ -81,15 +82,17 @@ import OurTeamComponent from '../team/OurTeamComponent.vue';
 
 const cards = [
   {
-    title: "EEPER:MD PROJECT",
-    description: "EEPER:MD - Economie D'Energie et Procédés Ecoresponsables dans La Production des Infracstructure en Afrique Centrale",
+    title: "EEPER: MD",
+    description: "EEPER: MD - Energy Efficiency and Eco-Responsible Processes in Infrastructure Production in Central Africa",
     imageUrl: require("@/assets/home/eepermd.png"),
-    buttonText: "EEPER:MD Project",
+    link:'https://eeper-site.vercel.app/',
+    buttonText: "EEPER: MD",
   },
   {
-    title: "Card 2",
-    description: "EEPER:MD - Economie D'Energie et Procédés Ecoresponsables dans La Production des Infracstructure en Afrique Centrale",
-    imageUrl: require("@/assets/home/download.jpeg"),
+    title: "FLAIR fellowships ",
+    description: "African recipients of 2020 FLAIR fellowships",
+    imageUrl: require("@/assets/home/Flair.png"),
+    link:'/project',
     buttonText: "Flair Project",
   },
 ];
