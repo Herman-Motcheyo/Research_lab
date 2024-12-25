@@ -85,6 +85,7 @@ const newsItems = [
     date: '2024-12-19',
     image: require("@/assets/new/Marae.png"),
     link: '#',
+    
   },
   {
     id: 3,
